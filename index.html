@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AF Beauty Space | Clínica de Estética Avançada em Torres Vedras</title>
+    <meta name="description" content="Realce a sua beleza natural na AF Beauty Space. Tratamentos de estética facial, corporal e manicure premium no coração de Torres Vedras.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF6F0',      // Nude/Creme muito suave (Fundo)
+                            text: '#2D3748',    // Cinza Antracite (Texto)
+                            rose: '#CBA3A1',    // Rosa Velho (Destaques principais)
+                            gold: '#D4AF37',    // Dourado Champanhe (Destaques secundários/Hover)
+                            white: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased selection:bg-brand-rose selection:text-white">
+
+    <header class="fixed w-full top-0 z-50 bg-white/70 backdrop-blur-md border-b border-brand-rose/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex flex-col">
+                        <img src="images/logo.png" alt ="AF Beauty Space Logo" class="h-10 md:h-12 w-auto object-contain transition-transform duration-500 hover:scale-105">
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-10 items-center">
+                    <a href="index.html" class="text-sm font-medium tracking-widest uppercase text-brand-rose transition-colors">Início</a>
+                    <a href="tratamentos.html" class="text-sm font-medium tracking-widest uppercase text-brand-text hover:text-brand-rose transition-colors">Tratamentos</a>
+                    <a href="precos.html" class="text-sm font-medium tracking-widest uppercase text-brand-text hover:text-brand-rose transition-colors">Preços</a>
+                    <a href="marcacoes.html" class="text-sm font-medium tracking-widest uppercase text-brand-text hover:text-brand-rose transition-colors">Marcações</a>
+                    
+                    <a href="marcacoes.html" class="ml-4 px-6 py-2.5 text-sm font-semibold tracking-wider uppercase text-white bg-brand-rose hover:bg-brand-gold rounded-full transition-all duration-500 shadow-md hover:shadow-lg">
+                        Agendar
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-btn" class="text-brand-text hover:text-brand-rose focus:outline-none transition-colors">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-white/95 backdrop-blur-xl border-b border-brand-rose/20 flex-col py-6 px-6 shadow-2xl md:hidden z-40">
+            <a href="index.html" class="py-4 text-sm font-medium tracking-widest uppercase text-brand-rose border-b border-brand-bg">Início</a>
+            <a href="tratamentos.html" class="py-4 text-sm font-medium tracking-widest uppercase text-brand-text hover:text-brand-rose border-b border-brand-bg">Tratamentos</a>
+            <a href="marcacoes.html" class="py-4 text-sm font-medium tracking-widest uppercase text-brand-text hover:text-brand-rose">Marcações</a>
+            <a href="marcacoes.html" class="mt-6 py-4 text-center text-sm font-semibold tracking-wider uppercase text-white bg-brand-rose rounded-full shadow-md">Agendar Avaliação</a>
+        </div>
+    </header>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[85vh]">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2000&auto=format&fit=crop" alt="Ambiente Spa AF Beauty Space" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl">
+                <p class="text-brand-gold font-semibold tracking-[0.3em] uppercase text-sm mb-4">Experiência Premium</p>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-light text-brand-text leading-tight mb-6">
+                    Realce a sua <br>
+                    <span class="font-semibold text-brand-rose">beleza natural.</span>
+                </h1>
+                <p class="text-lg text-brand-text/80 mb-10 leading-relaxed font-light">
+                    Clínica de Estética Avançada no coração de Torres Vedras. Onde o bem-estar encontra a ciência e a elegância.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="marcacoes.html" class="inline-flex justify-center items-center px-8 py-4 text-sm font-semibold tracking-widest uppercase text-white bg-brand-rose hover:bg-brand-gold rounded-full transition-all duration-500 shadow-xl shadow-brand-rose/30 hover:-translate-y-1">
+                        Agendar Avaliação
+                    </a>
+                    <a href="tratamentos.html" class="inline-flex justify-center items-center px-8 py-4 text-sm font-semibold tracking-widest uppercase text-brand-text border border-brand-text hover:border-brand-rose hover:text-brand-rose rounded-full transition-all duration-300">
+                        Ver Tratamentos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white shadow-sm relative z-20 -mt-8 mx-4 md:mx-auto max-w-4xl rounded-2xl border border-brand-bg">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+            <div class="flex space-x-1 text-brand-gold">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-brand-text font-medium text-sm md:text-base">
+                As nossas clientes confiam em nós - <span class="font-bold">Avaliação de 4.9 no Google</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-light text-brand-text mb-4">Os Nossos <span class="font-semibold text-brand-rose">Serviços</span></h2>
+                <p class="text-brand-text/70">Técnicas avançadas e produtos de excelência para resultados visíveis e duradouros.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <a href="tratamentos.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-brand-rose/5">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800" alt="Estética Facial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-semibold text-brand-text mb-3">Estética Facial</h3>
+                        <p class="text-brand-text/70 text-sm font-light leading-relaxed mb-6">Tratamentos anti-aging, limpeza de pele profunda, peelings e revitalização celular.</p>
+                        <span class="text-brand-rose text-sm font-bold tracking-widest uppercase group-hover:text-brand-gold transition-colors">Saber Mais →</span>
+                    </div>
+                </a>
+
+                <a href="tratamentos.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-brand-rose/5">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800" alt="Cuidado Corporal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-semibold text-brand-text mb-3">Cuidado Corporal</h3>
+                        <p class="text-brand-text/70 text-sm font-light leading-relaxed mb-6">Massagens modeladoras, drenagem linfática, tratamentos anti-celulite e relaxamento.</p>
+                        <span class="text-brand-rose text-sm font-bold tracking-widest uppercase group-hover:text-brand-gold transition-colors">Saber Mais →</span>
+                    </div>
+                </a>
+
+                <a href="tratamentos.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-brand-rose/5">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="images/manicure.png" alt="Manicure Premium" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-brand-text/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-semibold text-brand-text mb-3">Manicure Premium</h3>
+                        <p class="text-brand-text/70 text-sm font-light leading-relaxed mb-6">Cuidado de excelência para as suas mãos e pés, com produtos de alta durabilidade e higiene estrita.</p>
+                        <span class="text-brand-rose text-sm font-bold tracking-widest uppercase group-hover:text-brand-gold transition-colors">Saber Mais →</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-brand-rose/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 text-center md:text-left items-center">
+                
+                <div>
+                    <img src="images/logo.png" alt="AF Beauty Space Logo" class="h-24 md:h-32 w-auto object-contain mb-4 mx-auto md:mx-0">
+                </div>
+
+                <div>
+                    <h4 class="text-brand-text font-semibold tracking-widest uppercase text-sm mb-6">Menu</h4>
+                    <ul class="space-y-3 text-sm font-light text-brand-text/70">
+                        <li><a href="index.html" class="hover:text-brand-rose transition-colors">Início</a></li>
+                        <li><a href="tratamentos.html" class="hover:text-brand-rose transition-colors">Tratamentos</a></li>
+
+                        <li><a href="marcacoes.html" class="hover:text-brand-rose transition-colors">Agendar Marcação</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-brand-text font-semibold tracking-widest uppercase text-sm mb-6">Contactos</h4>
+                    <ul class="space-y-4 text-sm font-light text-brand-text/70">
+                        <li class="flex items-start justify-center md:justify-start">
+                            <svg class="w-5 h-5 text-brand-rose mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Rua 1 Dezembro n.4, r/c loja A<br/>Torres Vedras
+                        </li>
+                        <li class="flex items-start justify-center md:justify-start">
+                            <svg class="w-5 h-5 text-brand-rose mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div class="flex flex-col space-y-1">
+                                <a href="tel:+351914434665" class="hover:text-brand-rose transition-colors">914 434 665</a>
+                                <a href="tel:+351912843000" class="hover:text-brand-rose transition-colors">912 843 000</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <svg class="w-5 h-5 text-brand-rose mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:afbeautyspace21@gmail.com" class="hover:text-brand-rose transition-colors">afbeautyspace21@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-brand-rose/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light text-brand-text/50">
+                <p>&copy; <span id="ano-atual"></span> AF Beauty Space. Todos os direitos reservados.</p>
+                <p class="tracking-widest uppercase flex items-center gap-1">
+                    Powered by <a href="https://oeste-lab.vercel.app/" class="text-brand-rose font-semibold hover:text-brand-gold transition-colors" target="_blank">OesteLab</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ano atual dinâmico
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+
+        // Lógica do Menu Mobile
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('flex');
+            });
+        }
+    </script>
+</body>
+</html>
